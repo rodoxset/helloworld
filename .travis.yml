@@ -15,3 +15,9 @@ install:
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
   - python test.py
+
+deploy:
+  provider: heroku
+  api-key: 
+    secure: $HEROKU_API_KEY
+  app: app-lab29
